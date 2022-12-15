@@ -1,0 +1,16 @@
+.marker {
+    background-color: lightgrey;
+    color: black;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mapboxgl-popup{
+    top : 13px !important
+}

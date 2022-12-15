@@ -1,8 +1,8 @@
 const PuceList = ({ items }) => {
     return (
-        <div style={{ width: 100 + '%'}} className='sm:mt-5'>
+        <div style={{ width: 100 + '%'}} className='md:mt-auto mt-5'>
             <h5 className="text-2xl font-normal text-center leading-normal mt-0 mb-2 text-black-800">Liste des points</h5>
-            <ul>
+            <ul className="pt-5 pb-5">
                 {items.map((item, index) => (
                     <li className="m-auto w-3/4 p-5 shadow" key={index}>
                         <div>Point numéro : <span className="text-blue-800 font-bold">{index +1}</span></div>

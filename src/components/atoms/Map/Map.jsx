@@ -69,14 +69,14 @@ const Mapbox = () => {
                 <NavigationControl />
 
                 <div style={{ position: 'absolute', padding: '10px', gap: 5 + 'px' , display: 'flex', justifyContent: 'center', alignItems: 'center  ' }}>
-                    <span style={{ display: 'inline', background: 'white', padding : 3 + 'px' }}>Vos points : {markers.length}/{maxPoint}</span>
-
-                    <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={() => {
+                    <button className='bg-white hover:bg-blue-900 bg-blue-800 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={() => {
                         markers.map((marker) => {
                             marker.remove();
                         });
                         setMarkers([]);
+                        setMarkersInfo([]);
                     }}>Supprimer tout les points</button>
+                    <span style={{ display: 'block', background: 'white', color : '#1E40AF',  padding : 3 + 'px' }} className="rounded">Vos points : {markers.length}/{maxPoint}</span>
                 </div>
 
 

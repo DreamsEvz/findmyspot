@@ -21,7 +21,6 @@ const ExpendableMenu = ({ changeAddPointState, changeDescriptionPoint, changeNam
 
     return (
         <>
-            
             <div className='flex flex-col m-auto p-10 shadow' style={{width:100 + '%'}}>
             <button className='bg-white hover:bg-blue-900 text-white bg-blue-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={() => { toggleMenu(); }}>Ajouter un point</button>
                 {isOpen && 

@@ -69,7 +69,6 @@ const Mapbox = () => {
                 setNamePoint('');
                 setDescriptionPoint('');
                 setMarkers([...markers, newMarker]);
-                console.log(namePoint);
                 var myHeaders = new Headers();
                 myHeaders.append("Content-Type", "application/json");
 
@@ -89,8 +88,6 @@ const Mapbox = () => {
 
                 fetch("http://localhost:8055/items/points", requestOptions)
                     .then(response => response.text())
-                    .then(result => console.log(result))
-                    .catch(error => console.log('error', error));
             }
 
         }
@@ -139,9 +136,7 @@ const Mapbox = () => {
                         };
 
                         fetch("http://localhost:8055/items/points", requestOptions)
-                            .then(response => response.text())
-                            .then(result => console.log(result))
-                            .catch(error => console.log('error', error));
+                            .then(response => response.text());
                     }}>Supprimer tout les points</button>
                     <span style={{ display: 'block', background: 'white', color: '#1E40AF', padding: 3 + 'px' }} className="rounded">Vos points : {markersInfo.length}/{maxPoint}</span>
                 </div>
